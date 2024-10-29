@@ -5,20 +5,6 @@ prueba3
 prueba4
 prueba5
 
-group 2
-Prueba1
-prueba2
-prueba3
-prueba4
-prueba5
-
-group 3
-Prueba1
-prueba2
-prueba3
-prueba4
-prueba5
-
 group 4
 Prueba1
 prueba2
