@@ -32,7 +32,3 @@ function determinateLogLevel(environment: string, logLevelName?: string): LogLev
 
 console.log("================================================");
 console.log(determinateLogLevel("qa", "INFO1"));
-
-
-console.log("================================================");
-console.log(determinateLogLevel("qa", "INFO1"));
