@@ -34,7 +34,7 @@ function transformDevices(devices: Device[]): DeviceResponse {
 //data.xlsx
 //const filePath = path.join(__dirname, "files/data.xlsx");
 // dispositivos_iO.csv
-const filePath = path.join(__dirname, "files/dispositivos_iO.csv");
+const filePath = path.join(__dirname, "../src/files/dispositivos_iO.csv");
 const workbook = XLSX.readFile(filePath);
 
 // Obtener la primera hoja del Excel
@@ -60,7 +60,7 @@ console.log(JSON.stringify(transformDevices(devices), null, 2));
 
 const devicesJson = transformDevices(devices);
 
-const jsonFilePath = path.join(__dirname, "files/user_devices_status.json");
+const jsonFilePath = path.join(__dirname, "../src/files/user_devices_status.json");
 
 
 fs.writeFileSync(jsonFilePath, JSON.stringify(devicesJson, null, 2), "utf8");
