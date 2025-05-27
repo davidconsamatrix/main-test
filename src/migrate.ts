@@ -34,7 +34,7 @@ function transformDevices(devices: Device[]): DeviceResponse {
 //data.xlsx
 //const filePath = path.join(__dirname, "files/data.xlsx");
 // dispositivos_iO.csv
-const filePath = path.join(__dirname, "../src/files/dispositivos_iO.csv");
+const filePath = path.join(__dirname, "../src/files/DEVICES-15.05.2025.csv");
 const workbook = XLSX.readFile(filePath);
 
 // Obtener la primera hoja del Excel
@@ -49,7 +49,7 @@ const devices: Device[] = data.map(device => {
   const item: Device = {
     model: String(device['MODELO']),
     brand: String(device['MARCA']),
-    SO: String(device['VERS_SISTEMA']),
+    SO: String(device['SISTEMA']) + " " + String(device['VERS_SISTEMA']),
     status: 'approved',
     createdAt: new Date().toISOString(),
   }
