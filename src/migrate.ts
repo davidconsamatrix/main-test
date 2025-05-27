@@ -45,6 +45,8 @@ const sheet = workbook.Sheets[sheetName];
 const data = XLSX.utils.sheet_to_json(sheet);
 console.log(data);
 
+
+
 const devices: Device[] = data.map(device => {
   const item: Device = {
     model: String(device['MODELO']),
